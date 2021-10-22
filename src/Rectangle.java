@@ -4,12 +4,13 @@ public class Rectangle extends Shape {
     private double rHeight;
     private double rWidth;
 
-    public Rectangle(double xCord, double yCord, double rHeight, double rWidth) {
-        xCord = 1.0;
-        yCord = 1.0;
-        rHeight = 1.0;
-        rWidth = 1.0;
+    public Rectangle(double x, double y, double Height, double Width) {
+        xCord = x;
+        yCord = y;
+        rHeight = Height;
+        rWidth = Width;
     }
+
 
     public double getWidth() {
         if (rWidth < 1)
@@ -25,13 +26,13 @@ public class Rectangle extends Shape {
             return rHeight;
     }
 
-    public double getCord() {
-        return xCord + yCord;
+    public double getx() {
+        return xCord;
     }
 
-   // public double gety() {
-      //  return yCord;
-    //}
+    public double gety() {
+        return yCord;
+    }
 
     @Override
     public double area() {
@@ -44,8 +45,6 @@ public class Rectangle extends Shape {
     }
 
     public String toString() {
-        return ("Rectangle (" + String.format("%2.f", getCord() + "," + getHeight() + ","
-                + getWidth()) + ")");
+        return ("Rectangle (" + getx() + ","+ gety() +","+ getHeight() +","+ getWidth() + ")");
     }
 }
-

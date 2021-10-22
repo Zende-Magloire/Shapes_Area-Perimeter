@@ -3,14 +3,18 @@ public class Circle extends Shape{
     private double _y;
     private double cRadius;
 
-    public Circle (double _x, double _y, double cRadius) {
-        _x = 1.0;
-        _y = 1.0;
-        cRadius = 1.0;
+    public Circle (double x, double y, double Radius) {
+        _x = x;
+        _y = y;
+        cRadius = Radius;
     }
 
-        public double getCords(){
-            return _x + _y;
+        public double getx(){
+            return _x;
+    }
+
+    public double gety(){
+        return _y;
     }
 
     public double getRadius(){
@@ -28,6 +32,6 @@ public class Circle extends Shape{
     }
 
     public String toString() {
-        return ("Circle (" + String.format("%2.f", getCords() + "," + getRadius()) + ")");
+        return ("Circle (" + getx() + ","+ gety() +","+ getRadius() + ")");
     }
 }
