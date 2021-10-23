@@ -38,7 +38,7 @@ public class Main {
                 }
                 case 2: {
                     //      call the selected shape's perimeter function
-                    double perimeter = shapes[sChoice].area();
+                    double perimeter = shapes[sChoice].perimeter();
                     //      print out the perimeter
                     System.out.println("The perimeter is " + perimeter);
                     break;
